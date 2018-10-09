@@ -3,13 +3,13 @@
     "version": "1.0.0",
     "description": "translate japanese to businesh",
     "main": "src/main.js",
+    "module": "es/redux.js",
     "repository": "git@github.com:takeokunn/businesh.git",
     "scripts": {
         "test": "npm run lint && npm run ava",
         "ava": "nyc ava --verbose",
         "lint": "eslint src/*.js test/*.js",
-        "build": "rollup -c",
-        "publish": "npm publish"
+        "build": "rollup -c"
     },
     "author": "takeokunn<bararararatty@gmail.com>",
     "license": "MIT",
