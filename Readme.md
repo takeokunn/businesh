@@ -1,7 +1,14 @@
 ## Businesh Translate Tool(ビジネッシュ翻訳)
 [![CircleCI](https://circleci.com/gh/takeokunn/businesh/tree/master.svg?style=svg)](https://circleci.com/gh/takeokunn/businesh/tree/master)
 
+## Npm
+
+```sh
+$ npm i businesh
+```
+
 ## How to use
+
 ```js
 const before_text = '任意の文字列をビジネッシュ・テキストに変換するライブラリです。';
 businesh.translate(before_text)
@@ -13,4 +20,9 @@ businesh.translate(before_text)
 ```
 
 ## Licence
+
 MIT
+
+## Special Thanks
+
+Businesh Translate Site: [https://bizwd.net/](https://bizwd.net/)

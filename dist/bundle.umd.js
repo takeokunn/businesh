@@ -6,9 +6,10 @@
 
     var axios = require('axios');
 
-    var libxmljs = require("libxmljs");
+    var libxmljs = require('libxmljs');
 
     var querystring = require('querystring');
+
     var XPATH = '//textarea[@name="after"]';
     var URL = 'https://bizwd.net/';
     var translate = function translate(text) {
@@ -22,8 +23,7 @@
           transbtn: '翻訳'
         };
         axios.post(URL, querystring.stringify(params)).then(function (res) {
-          var dom = libxmljs.parseHtml(res.data);
-          return dom.get(XPATH).text();
+          return libxmljs.parseHtml(res.data).get(XPATH).text();
         }).then(function (txt) {
           return resolve(txt);
         }).catch(function (err) {
@@ -31,15 +31,10 @@
         });
       });
     };
-    translate("任意の文字列をビジネッシュ・テキストに変換するライブラリです。").then(function (txt) {
-      return console.log(txt);
-    }).catch(function (err) {
-      return console.log(err);
-    });
 
     exports.translate = translate;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=bundle.js.map
+//# sourceMappingURL=bundle.umd.js.map

@@ -8,8 +8,8 @@
         "test": "npm run lint && npm run ava",
         "ava": "nyc ava --verbose",
         "lint": "eslint src/*.js test/*.js",
-        "dev": "npm run build && node dist/bundle.js",
-        "build": "rollup -c"
+        "build": "rollup -c",
+        "publish": "npm publish"
     },
     "author": "takeokunn<bararararatty@gmail.com>",
     "license": "MIT",
