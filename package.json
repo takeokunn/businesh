@@ -2,8 +2,9 @@
     "name": "businesh",
     "version": "1.0.0",
     "description": "translate japanese to businesh",
-    "main": "src/main.js",
-    "module": "es/redux.js",
+    "main": "dist/bundle.cjs.js",
+    "module": "dist/bundle.es.js",
+    "browser": "dist/bundle.umd.js",
     "repository": "git@github.com:takeokunn/businesh.git",
     "scripts": {
         "test": "npm run lint && npm run ava",
